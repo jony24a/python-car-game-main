@@ -40,7 +40,7 @@ classDiagram
         - image: pygame.Surface
         + __init__(image: pygame.Surface, x: int, y: int)
     }
-    class juego.py {
+    class juego_py {
         - screen: pygame.Surface
         - speed: int
         - score: int
@@ -58,10 +58,9 @@ classDiagram
     PlayerVehicle <|-- Vehicle
     PlayerVehicle --|> pygame.sprite.Sprite
     Vehicle --|> pygame.sprite.Sprite
-    juego.py --|> pygame.sprite.Sprite
+    juego_py --|> pygame.sprite.Sprite
     pygame.sprite.Sprite --|> pygame.Surface
     pygame.Surface <|-- pygame.image.Surface
-
 ```
 # Class identidad relacion 
 
