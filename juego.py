@@ -2,7 +2,11 @@ import pygame
 from pygame.locals import *
 import random
 
+from PlayerVehicle import PlayerVehicle
+from Vehicle import Vehicle
+
 pygame.init()
+
 
 # Crear la ventana 
 width = 500
@@ -50,26 +54,7 @@ gameover = False
 speed = 2
 score = 0
 
-class Vehicle(pygame.sprite.Sprite):
-    
-    def __init__(self, image, x, y):
-        pygame.sprite.Sprite.__init__(self)
-        
-        # Escala la imagen hacia abajo para que no sea más ancho que el carril
-        image_scale = 45 / image.get_rect().width
-        new_width = image.get_rect().width * image_scale
-        new_height = image.get_rect().height * image_scale
-        self.image = pygame.transform.scale(image, (new_width, new_height))
-        
-        self.rect = self.image.get_rect()
-        self.rect.center = [x, y]
-        
-class PlayerVehicle(Vehicle):
-    
-    def __init__(self, x, y):
-        image = pygame.image.load('images/carro.png')
-        super().__init__(image, x, y)
-        
+               
 # grupos de sprite
 player_group = pygame.sprite.Group()
 vehicle_group = pygame.sprite.Group()
