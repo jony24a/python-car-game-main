@@ -99,28 +99,29 @@ erDiagram
 
 ```mermaid
 graph TD;
-    A[Comenzar] --> B{¿Jugador presiona una tecla?};
-    B -->|Sí| C[Ejecutar acción correspondiente];
-    C --> D{¿Acción produce movimiento del jugador?};
-    D -->|Sí| E{¿Jugador colisiona con obstáculo?};
-    E -->|Sí| F[Mostrar pantalla de Game Over];
-    F --> G{¿Jugador presiona 'Y' para jugar de nuevo?};
-    G -->|Sí| A;
-    G -->|No| H[Salir del juego];
-    E -->|No| I{¿Jugador alcanza la meta?};
-    I -->|Sí| J[Mostrar pantalla de victoria];
+    A[Start] --> B{Is player pressing a key?};
+    B -->|Yes| C[Execute corresponding action];
+    C --> D{Does action cause player movement?};
+    D -->|Yes| E{Does player collide with obstacle?};
+    E -->|Yes| F[Display Game Over screen];
+    F --> G{Does player press 'Y' to play again?};
+    G -->|Yes| A;
+    G -->|No| H[Quit game];
+    E -->|No| I{Does player reach the goal?};
+    I -->|Yes| J[Display Victory screen];
     J --> G;
     I -->|No| D;
     D -->|No| B;
-    B -->|No| K{¿Transcurrido tiempo límite del nivel?};
-    K -->|Sí| F;
+    B -->|No| K{Has level time limit elapsed?};
+    K -->|Yes| F;
     K -->|No| B;
-    B -->|Sí| L{¿Juego en pausa?};
-    L -->|Sí| M[Mostrar menú de pausa];
+    B -->|Yes| L{Is game paused?};
+    L -->|Yes| M[Display pause menu];
     L -->|No| B;
-    M --> N{¿Jugador selecciona continuar?};
-    N -->|Sí| B;
-    N -->|No| O[Salir al menú principal];
-    O -->|Sí| A;
+    M --> N{Does player select continue?};
+    N -->|Yes| B;
+    N -->|No| O[Quit to main menu];
+    O -->|Yes| A;
     O -->|No| H;
+
 ```
