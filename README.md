@@ -32,35 +32,22 @@ graph TD;
 # Class Diagram
 ```mermaid
 classDiagram
-    class PlayerVehicle {
-        - image: pygame.Surface
-        + __init__(x: int, y: int)
-    }
     class Vehicle {
-        - image: pygame.Surface
-        + __init__(image: pygame.Surface, x: int, y: int)
+        - image
+        - rect
+        + __init__(image, x, y)
     }
-    class juego_py {
-        - screen: pygame.Surface
-        - speed: int
-        - score: int
-        - gameover: bool
-        + main()
+    class PlayerVehicle {
+        - __init__(x, y)
     }
-    class pygame.Surface
-    class pygame.image.Surface
-    class pygame.sprite.Sprite {
-        - image: pygame.Surface
-        - rect: pygame.Rect
-        + __init__()
+    class Main {
+        - game_loop()
     }
 
-    PlayerVehicle <|-- Vehicle
-    PlayerVehicle --|> pygame.sprite.Sprite
-    Vehicle --|> pygame.sprite.Sprite
-    juego_py --|> pygame.sprite.Sprite
-    pygame.sprite.Sprite --|> pygame.Surface
-    pygame.Surface <|-- pygame.image.Surface
+    Main --> Vehicle
+    Main --> PlayerVehicle
+
+
 ```
 # Class identidad relacion 
 
