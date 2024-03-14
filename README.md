@@ -310,4 +310,8 @@ To play the "Car Game By Jonatan Novoa," follow these instructions:
   
 By following these instructions, you can enjoy an exciting and challenging gaming experience in the world of fast-paced traffic navigation. Good luck!
 
+# Character Moevement
+
+In the "Car Game By Jonatan Novoa," character movement is controlled by the player using the left and right arrow keys. The player's vehicle starts in the center lane and can move left or right to avoid collisions with other vehicles. Continuous forward movement is automatic, and the player earns points by navigating through traffic without crashing. Collisions end the game, and players aim to achieve high scores by mastering lane-changing maneuvers.
+
 
