@@ -55,3 +55,42 @@ sequenceDiagram
         end
     end
 ```
+
+# Class identidad relacion 
+
+```mermaid
+erDiagram
+    PLAYER {
+        string player_id
+        string player_name
+        int score
+    }
+    VEHICLE {
+        string vehicle_id
+        string vehicle_type
+        string vehicle_image
+    }
+    PLAYER_VEHICLE {
+        string player_id
+        string vehicle_id
+        int position_x
+        int position_y
+    }
+    OBSTACLE {
+        string obstacle_id
+        string obstacle_type
+        string obstacle_image
+    }
+    PLAYER_OBSTACLE {
+        string player_id
+        string obstacle_id
+        int position_x
+        int position_y
+    }
+
+    PLAYER ||--o{ PLAYER_VEHICLE : owns
+    PLAYER_VEHICLE }o--|| VEHICLE : controls
+    PLAYER_VEHICLE ||--|{ PLAYER_OBSTACLE : encounters
+    PLAYER_OBSTACLE }|--|| OBSTACLE : obstructs
+
+```
