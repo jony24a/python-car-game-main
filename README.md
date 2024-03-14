@@ -1,7 +1,5 @@
 # Flowchart
 
-hola como estan me llamo rosel :) 
-
 ```mermaid
 graph TD;
     A[Start] --> B{Is player pressing a key?};
