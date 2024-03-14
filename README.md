@@ -81,6 +81,7 @@ classDiagram
     juego --|> pygame.Surface
     juego --|> pygame.time.Clock
     juego --|> pygame.sprite.Group
+
 ```
 # Class identidad relacion 
 
