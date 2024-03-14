@@ -12,7 +12,7 @@ Strap yourself in, fire up the engine, and get ready for an exhilarating race in
 
 # Code Structure
 
-  1. Main Script (juego.py):
+1. Main Script (juego.py):
 
 - This script serves as the entry point of the game.
 - It initializes the Pygame engine, sets up the game window, and handles the game loop.
@@ -20,41 +20,41 @@ Strap yourself in, fire up the engine, and get ready for an exhilarating race in
 - Imports the PlayerVehicle and Vehicle classes from separate files.
 - Contains the main loop that runs the game.
   
-  2. PlayerVehicle Class (PlayerVehicle.py):
+2. PlayerVehicle Class (PlayerVehicle.py):
 
 - Represents the player-controlled vehicle in the game.
 - Inherits from the Vehicle class.
 - Initializes the player's vehicle with its image and initial position.
 - Handles movement of the player's vehicle based on user input.
 
-  3. Vehicle Class (Vehicle.py):
+3. Vehicle Class (Vehicle.py):
 
 - Represents non-player vehicles in the game.
 - Initialized with a random image and initial position.
 - Handles movement of vehicles across the screen.
 - Detects collisions with the player's vehicle.
 
-  4. Other Files:
+4. Other Files:
 
 - The game might include additional files for images, sounds, or other resources used in the game.
 
 # Main Classes
 
-  1. juego.py:
+1. juego.py:
 
 - This class represents the main script of the game.
 - It initializes the Pygame engine, sets up the game window, and manages the game loop.
 - Handles events, updates game logic, draws game elements, and checks for collisions.
 - Contains the main loop that runs the game.
   
-  2. PlayerVehicle (defined in PlayerVehicle.py):
+2. PlayerVehicle (defined in PlayerVehicle.py):
 
 - Represents the player-controlled vehicle in the game.
 - Inherits from the Vehicle class.
 - Initializes the player's vehicle with its image and initial position.
 - Manages movement of the player's vehicle based on user input.
   
-  3. Vehicle (defined in Vehicle.py):
+3. Vehicle (defined in Vehicle.py):
 
 - Represents non-player vehicles in the game.
 - Initialized with a random image and initial position.
