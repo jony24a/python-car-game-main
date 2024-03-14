@@ -10,6 +10,31 @@ Get ready to face an increasingly challenging ordeal as the speed ramps up and v
 
 Strap yourself in, fire up the engine, and get ready for an exhilarating race in the "Car Game By Jonatan Novoa"!
 
+# Code Structure
+
+Main Script (juego.py):
+
+This script serves as the entry point of the game.
+It initializes the Pygame engine, sets up the game window, and handles the game loop.
+Responsible for managing events, updating game logic, drawing game elements, and checking for collisions.
+Imports the PlayerVehicle and Vehicle classes from separate files.
+Contains the main loop that runs the game.
+PlayerVehicle Class (PlayerVehicle.py):
+
+Represents the player-controlled vehicle in the game.
+Inherits from the Vehicle class.
+Initializes the player's vehicle with its image and initial position.
+Handles movement of the player's vehicle based on user input.
+Vehicle Class (Vehicle.py):
+
+Represents non-player vehicles in the game.
+Initialized with a random image and initial position.
+Handles movement of vehicles across the screen.
+Detects collisions with the player's vehicle.
+Other Files:
+
+The game might include additional files for images, sounds, or other resources used in the game.
+
 # Flowchart
 
 ```mermaid
