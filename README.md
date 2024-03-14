@@ -117,29 +117,31 @@ In the context of the "Car Game By Jonatan Novoa," a data dictionary might inclu
 
 1. PlayerVehicle Class:
 
-- "image": Represents the image of the player-controlled vehicle.
-rect: Represents the rectangular area occupied by the player's vehicle on the screen.
-x: Represents the x-coordinate of the player's vehicle.
-y: Represents the y-coordinate of the player's vehicle.
-Vehicle Class:
+- image: Represents the image of the player-controlled vehicle.
+- rect: Represents the rectangular area occupied by the player's vehicle on the screen.
+- x: Represents the x-coordinate of the player's vehicle.
+- y: Represents the y-coordinate of the player's vehicle.
+  
+2. Vehicle Class:
 
-image: Represents the image of a non-player vehicle.
-rect: Represents the rectangular area occupied by a non-player vehicle on the screen.
-x: Represents the x-coordinate of a non-player vehicle.
-y: Represents the y-coordinate of a non-player vehicle.
-speed: Represents the speed of a non-player vehicle.
-score: Represents the player's score in the game.
-Main Script (juego.py):
+- image: Represents the image of a non-player vehicle.
+- rect: Represents the rectangular area occupied by a non-player vehicle on the screen.
+- x: Represents the x-coordinate of a non-player vehicle.
+- y: Represents the y-coordinate of a non-player vehicle.
+- speed: Represents the speed of a non-player vehicle.
+- score: Represents the player's score in the game.
 
-width: Represents the width of the game window.
-height: Represents the height of the game window.
-screen: Represents the Pygame display surface.
-player_group: Represents the group containing the player's vehicle sprite.
-vehicle_group: Represents the group containing non-player vehicle sprites.
-clock: Represents the Pygame clock object for managing frame rate.
-fps: Represents the target frames per second for the game.
-gameover: Represents the flag indicating whether the game is over.
-running: Represents the flag indicating whether the game is running.
+3. Main Script (juego.py):
+
+- width: Represents the width of the game window.
+- height: Represents the height of the game window.
+- screen: Represents the Pygame display surface.
+- player_group: Represents the group containing the player's vehicle sprite.
+- vehicle_group: Represents the group containing non-player vehicle sprites.
+- clock: Represents the Pygame clock object for managing frame rate.
+- fps: Represents the target frames per second for the game.
+- gameover: Represents the flag indicating whether the game is over.
+- running: Represents the flag indicating whether the game is running.
 
 # Flowchart
 
