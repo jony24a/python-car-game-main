@@ -29,29 +29,25 @@ sequenceDiagram
     participant CollisionDetection
     participant ScoreManager
 
-    Main ->> PlayerVehicle: Iniciar juego
-    PlayerVehicle ->> Vehicle: Crear vehículo del jugador
-    loop Juego en curso
-        Main ->> Main: Controlar bucle del juego
-        Main ->> PlayerVehicle: Manejar entrada del jugador
-        PlayerVehicle ->> PlayerVehicle: Mover vehículo del jugador
+    Main ->> PlayerVehicle: Start game
+    PlayerVehicle ->> Vehicle: Create player vehicle
+    loop Game in progress
+        Main ->> Main: Control game loop
+        Main ->> PlayerVehicle: Handle player input
+        PlayerVehicle ->> PlayerVehicle: Move player vehicle
 
-        alt Detectar colisión
-            PlayerVehicle ->> CollisionDetection: Verificar colisión
-            alt Colisión detectada
-                CollisionDetection ->> Main: Informar colisión
-                Main ->> Main: Manejar colisión
-            end
-        else No hay colisión
-            Main ->> Vehicle: Mover vehículos controlados por la computadora
+        alt Collision detected
+            PlayerVehicle ->> CollisionDetection: Check collision
+            CollisionDetection ->> Main: Inform collision
+            Main ->> Main: Handle collision
+        else No collision
+            Main ->> Vehicle: Move computer-controlled vehicles
         end
 
-        alt Verificar puntos
-            Vehicle ->> ScoreManager: Verificar puntaje
-            alt Se obtienen puntos
-                ScoreManager ->> Main: Informar sobre puntaje
-                Main ->> Main: Actualizar puntaje
-            end
+        alt Check for points
+            Vehicle ->> ScoreManager: Check score
+            ScoreManager ->> Main: Inform about score
+            Main ->> Main: Update score
         end
     end
 ```
@@ -92,10 +88,10 @@ erDiagram
     PLAYER_VEHICLE }o--|| VEHICLE : controls
     PLAYER_VEHICLE ||--|{ PLAYER_OBSTACLE : encounters
     PLAYER_OBSTACLE }|--|| OBSTACLE : obstructs
-
 ```
 
-# Diagrama de flujo 
+# Flowchart
+
 
 ```mermaid
 graph TD;
