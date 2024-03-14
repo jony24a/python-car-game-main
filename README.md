@@ -31,59 +31,56 @@ graph TD;
 ```
 # Class Diagram
 ```mermaid
-
 classDiagram
     class PlayerVehicle {
-        -image: pygame.Surface
-        +__init__(x: int, y: int)
+        - image: pygame.Surface
+        + __init__(x: int, y: int)
     }
     class Vehicle {
-        -image: pygame.Surface
-        +__init__(image: pygame.Surface, x: int, y: int)
+        - image: pygame.Surface
+        + __init__(image: pygame.Surface, x: int, y: int)
     }
     class juego {
-        -pygame: Module
-        -width: int
-        -height: int
-        -screen_size: tuple
-        -screen: pygame.Surface
-        -gray: tuple
-        -green: tuple
-        -red: tuple
-        -white: tuple
-        -yellow: tuple
-        -road_width: int
-        -marker_width: int
-        -marker_height: int
-        -left_lane: int
-        -center_lane: int
-        -right_lane: int
-        -lanes: list
-        -road: tuple
-        -left_edge_marker: tuple
-        -right_edge_marker: tuple
-        -lane_marker_move_y: int
-        -player_x: int
-        -player_y: int
-        -clock: pygame.time.Clock
-        -fps: int
-        -gameover: bool
-        -speed: int
-        -score: int
-        -player_group: pygame.sprite.Group
-        -vehicle_group: pygame.sprite.Group
-        -image_filenames: list
-        -vehicle_images: list
-        -crash: pygame.Surface
-        -crash_rect: pygame.Rect
+        - pygame: Module
+        - width: int
+        - height: int
+        - screen_size: tuple
+        - screen: pygame.Surface
+        - gray: tuple
+        - green: tuple
+        - red: tuple
+        - white: tuple
+        - yellow: tuple
+        - road_width: int
+        - marker_width: int
+        - marker_height: int
+        - left_lane: int
+        - center_lane: int
+        - right_lane: int
+        - lanes: list
+        - road: tuple
+        - left_edge_marker: tuple
+        - right_edge_marker: tuple
+        - lane_marker_move_y: int
+        - player_x: int
+        - player_y: int
+        - clock: pygame.time.Clock
+        - fps: int
+        - gameover: bool
+        - speed: int
+        - score: int
+        - player_group: pygame.sprite.Group
+        - vehicle_group: pygame.sprite.Group
+        - image_filenames: list
+        - vehicle_images: list
+        - crash: pygame.Surface
+        - crash_rect: pygame.Rect
     }
-    
+
     PlayerVehicle --|> Vehicle
     juego --|> pygame.Surface
     juego --|> pygame.time.Clock
     juego --|> pygame.sprite.Group
-
-
 ```
 # Class identidad relacion 
 
