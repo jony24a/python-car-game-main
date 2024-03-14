@@ -264,4 +264,50 @@ sequenceDiagram
     end
 ```
 
+# How to play the game
+
+To play the "Car Game By Jonatan Novoa," follow these instructions:
+
+1. Starting the Game:
+
+- Launch the game by running the main script (juego.py).
+- The game window will appear, displaying the road and your vehicle.
+  
+2. Controls:
+
+- Control your vehicle using the left and right arrow keys on your keyboard.
+- Use the left arrow key to move your vehicle to the left lane.
+- Use the right arrow key to move your vehicle to the right lane.
+  
+3. Avoid Collisions:
+
+- Navigate your vehicle through the traffic, avoiding collisions with other vehicles.
+- Colliding with another vehicle will end the game.
+  
+4. Scoring:
+
+- Score points by successfully maneuvering through traffic without colliding.
+- The longer you survive without crashing, the higher your score will be.
+
+5. Game Over:
+
+- The game will end when you collide with another vehicle.
+- A "Game Over" message will be displayed, along with your final score.
+
+6. Restarting the Game:
+
+- If you wish to play again, press the 'Y' key when prompted.
+- The game will reset, and you can start a new round.
+
+7. Exiting the Game:
+
+- If you want to quit the game, press the 'N' key when prompted.
+- The game window will close, and you'll return to the desktop.
+  
+8. Enjoy the Game:
+
+- Have fun playing the "Car Game By Jonatan Novoa" and aim for a high score!
+  
+By following these instructions, you can enjoy an exciting and challenging gaming experience in the world of fast-paced traffic navigation. Good luck!
+
 
