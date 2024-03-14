@@ -31,30 +31,22 @@ graph TD;
 ```
 # Class Diagram
 ```mermaid
-# Diagrama de Clases
+classDiagram
+    class Vehicle {
+        - image
+        - rect
+        + __init__(image, x, y)
+    }
+    class PlayerVehicle {
+        - __init__(x, y)
+    }
+    class Main {
+        - game_loop()
+    }
 
-## Clases Principales:
+    Main --> Vehicle
+    Main --> PlayerVehicle
 
-### Vehicle
-- **Atributos:**
-  - `image`
-  - `rect`
-
-- **Métodos:**
-  - `__init__(self, image, x, y)`
-
-### PlayerVehicle
-- **Herencia:** Vehicle
-
-- **Métodos:**
-  - `__init__(self, x, y)`
-
-### Main
-- **Métodos:**
-  - `game_loop()`
-
-## Relaciones
-- `Main` se relaciona con `Vehicle` y `PlayerVehicle`
 
 ```
 # Class identidad relacion 
