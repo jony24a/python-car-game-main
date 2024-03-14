@@ -37,24 +37,26 @@ The game might include additional files for images, sounds, or other resources u
 
 # Main Classes
 
-juego.py:
+1. juego.py:
 
-This class represents the main script of the game.
-It initializes the Pygame engine, sets up the game window, and manages the game loop.
-Handles events, updates game logic, draws game elements, and checks for collisions.
-Contains the main loop that runs the game.
-PlayerVehicle (defined in PlayerVehicle.py):
+- This class represents the main script of the game.
+- It initializes the Pygame engine, sets up the game window, and manages the game loop.
+- Handles events, updates game logic, draws game elements, and checks for collisions.
+- Contains the main loop that runs the game.
+  
+2. PlayerVehicle (defined in PlayerVehicle.py):
 
-Represents the player-controlled vehicle in the game.
-Inherits from the Vehicle class.
-Initializes the player's vehicle with its image and initial position.
-Manages movement of the player's vehicle based on user input.
-Vehicle (defined in Vehicle.py):
+- Represents the player-controlled vehicle in the game.
+- Inherits from the Vehicle class.
+- Initializes the player's vehicle with its image and initial position.
+- Manages movement of the player's vehicle based on user input.
+  
+3. Vehicle (defined in Vehicle.py):
 
-Represents non-player vehicles in the game.
-Initialized with a random image and initial position.
-Manages movement of vehicles across the screen.
-Detects collisions with the player's vehicle.
+- Represents non-player vehicles in the game.
+- Initialized with a random image and initial position.
+- Manages movement of vehicles across the screen.
+- Detects collisions with the player's vehicle.
 
 # Flowchart
 
