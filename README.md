@@ -1,6 +1,6 @@
 # Documentation of my code
 
-# Introduction
+# Introduction:
 
 The "Car Game" is an exciting racing game created by Jonatan Novoa using the Python programming language and the Pygame library. Immerse yourself in an experience full of speed, challenges, and adrenaline as you make your way through a busy highway teeming with moving vehicles.
 
@@ -10,7 +10,7 @@ Get ready to face an increasingly challenging ordeal as the speed ramps up and v
 
 Strap yourself in, fire up the engine, and get ready for an exhilarating race in the "Car Game By Jonatan Novoa"!
 
-# Code Structure
+# Code Structure:
 
 1. Main Script (juego.py):
 
@@ -38,7 +38,7 @@ Strap yourself in, fire up the engine, and get ready for an exhilarating race in
 
 - The game might include additional files for images, sounds, or other resources used in the game.
 
-# Main Classes
+# Main Classes:
 
 1. juego.py:
 
@@ -61,7 +61,7 @@ Strap yourself in, fire up the engine, and get ready for an exhilarating race in
 - Manages movement of vehicles across the screen.
 - Detects collisions with the player's vehicle.
 
-# Game Operation 
+# Game Operation:
 
 1. Initialization:
 
@@ -107,11 +107,11 @@ Strap yourself in, fire up the engine, and get ready for an exhilarating race in
 The player can choose to restart the game by pressing a designated key (typically 'Y' or 'N') when prompted.
 If the player chooses to restart, the game resets, and the main loop continues from the beginning.
 
-# Conclusion
+# Conclusion:
 
 The "Car Game By Jonatan Novoa" delivers an engaging and challenging gaming experience. With its fast-paced gameplay, intuitive controls, and progressively increasing difficulty, players are drawn into an immersive world of traffic navigation. Interactive features like collision detection and scoring system add depth to the gameplay, while the user-friendly interface ensures accessibility for players of all skill levels. Overall, the game showcases creativity and innovation in design, offering hours of entertainment for gaming enthusiasts.
 
-# Data Dictioonary
+# Data Dictioonary:
 
 In the context of the "Car Game By Jonatan Novoa," a data dictionary might include the following:
 
@@ -143,7 +143,7 @@ In the context of the "Car Game By Jonatan Novoa," a data dictionary might inclu
 - gameover: Represents the flag indicating whether the game is over.
 - running: Represents the flag indicating whether the game is running.
 
-# Flowchart
+# Flowchart:
 
 ```mermaid
 graph TD;
@@ -173,7 +173,7 @@ graph TD;
     O -->|No| H;
 
 ```
-# Class Diagram
+# Class Diagram: 
 ```mermaid
 classDiagram
     class Vehicle {
@@ -193,7 +193,7 @@ classDiagram
 
 
 ```
-# Class identidad relacion 
+# Class identidad relacion:
 
 ```mermaid
 erDiagram
@@ -232,7 +232,7 @@ erDiagram
 ```
 
 
-# Diagram of sequence
+# Diagram of sequence:
 ```mermaid
 sequenceDiagram
     participant Main
@@ -264,7 +264,7 @@ sequenceDiagram
     end
 ```
 
-# How to play the game
+# How to play the game: 
 
 To play the "Car Game By Jonatan Novoa," follow these instructions:
 
@@ -310,8 +310,15 @@ To play the "Car Game By Jonatan Novoa," follow these instructions:
   
 By following these instructions, you can enjoy an exciting and challenging gaming experience in the world of fast-paced traffic navigation. Good luck!
 
-# Character Movement
+# Character Movement:
 
 In the "Car Game By Jonatan Novoa," character movement is controlled by the player using the left and right arrow keys. The player's vehicle starts in the center lane and can move left or right to avoid collisions with other vehicles. Continuous forward movement is automatic, and the player earns points by navigating through traffic without crashing. Collisions end the game, and players aim to achieve high scores by mastering lane-changing maneuvers.
+
+# Bibliography:
+
+1. https://opengameart.org/content/free-top-down-car-sprites-by-unlucky-studio
+2. https://opengameart.org/content/explosions
+
+
 
 
