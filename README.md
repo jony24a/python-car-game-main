@@ -94,3 +94,33 @@ erDiagram
     PLAYER_OBSTACLE }|--|| OBSTACLE : obstructs
 
 ```
+
+# Diagrama de flujo 
+
+```mermaid
+graph TD;
+    A[Comenzar] --> B{¿Jugador presiona una tecla?};
+    B -->|Sí| C[Ejecutar acción correspondiente];
+    C --> D{¿Acción produce movimiento del jugador?};
+    D -->|Sí| E{¿Jugador colisiona con obstáculo?};
+    E -->|Sí| F[Mostrar pantalla de Game Over];
+    F --> G{¿Jugador presiona 'Y' para jugar de nuevo?};
+    G -->|Sí| A;
+    G -->|No| H[Salir del juego];
+    E -->|No| I{¿Jugador alcanza la meta?};
+    I -->|Sí| J[Mostrar pantalla de victoria];
+    J --> G;
+    I -->|No| D;
+    D -->|No| B;
+    B -->|No| K{¿Transcurrido tiempo límite del nivel?};
+    K -->|Sí| F;
+    K -->|No| B;
+    B -->|Sí| L{¿Juego en pausa?};
+    L -->|Sí| M[Mostrar menú de pausa];
+    L -->|No| B;
+    M --> N{¿Jugador selecciona continuar?};
+    N -->|Sí| B;
+    N -->|No| O[Salir al menú principal];
+    O -->|Sí| A;
+    O -->|No| H;
+```
