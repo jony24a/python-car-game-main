@@ -109,7 +109,7 @@ If the player chooses to restart, the game resets, and the main loop continues f
 
 # Conclusion
 
-the "Car Game By Jonatan Novoa" delivers an engaging and challenging gaming experience. With its fast-paced gameplay, intuitive controls, and progressively increasing difficulty, players are drawn into an immersive world of traffic navigation. Interactive features like collision detection and scoring system add depth to the gameplay, while the user-friendly interface ensures accessibility for players of all skill levels. Overall, the game showcases creativity and innovation in design, offering hours of entertainment for gaming enthusiasts.
+The "Car Game By Jonatan Novoa" delivers an engaging and challenging gaming experience. With its fast-paced gameplay, intuitive controls, and progressively increasing difficulty, players are drawn into an immersive world of traffic navigation. Interactive features like collision detection and scoring system add depth to the gameplay, while the user-friendly interface ensures accessibility for players of all skill levels. Overall, the game showcases creativity and innovation in design, offering hours of entertainment for gaming enthusiasts.
 
 # Flowchart
 
