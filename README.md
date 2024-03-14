@@ -61,6 +61,52 @@ Strap yourself in, fire up the engine, and get ready for an exhilarating race in
 - Manages movement of vehicles across the screen.
 - Detects collisions with the player's vehicle.
 
+# Game Operation 
+
+1. Initialization:
+
+- The game initializes by launching the main script (juego.py).
+- Pygame engine is initialized, and the game window is set up.
+- Necessary resources like images and sounds are loaded.
+  
+2. Game Loop:
+
+- The main game loop begins, continuously running until the game is exited.
+- Within the loop, events such as user inputs are handled.
+- Game logic is updated, including the movement of vehicles and detection of collisions.
+- Game elements are redrawn on the screen to reflect the updated state.
+  
+3. Player Interaction:
+
+- The player controls their vehicle using keyboard input (left and right arrow keys).
+- The player's vehicle moves horizontally within predefined lanes on the road.
+  
+4. Vehicle Movement:
+
+- Non-player vehicles are generated and move vertically downward on the screen at varying speeds.
+- New vehicles are added to the game to maintain a constant flow of traffic.
+- Vehicles are removed from the game when they move beyond the screen.
+  
+5. Collision Detection:
+
+ - Collision detection is performed between the player's vehicle and other vehicles on the road.
+ - If a collision occurs, the game ends, and a "Game Over" message is displayed.
+   
+6. Scoring:
+
+- The player earns points as they successfully navigate through the traffic without colliding with other vehicles.
+- The game speed increases periodically or based on the player's score to ramp up the difficulty.
+  
+7. Game Over:
+
+- When a collision occurs or the player chooses to quit the game, the game over sequence is initiated.
+- The final score is displayed, along with an option to restart the game.
+  
+8. Restart:
+
+The player can choose to restart the game by pressing a designated key (typically 'Y' or 'N') when prompted.
+If the player chooses to restart, the game resets, and the main loop continues from the beginning.
+
 # Flowchart
 
 ```mermaid
